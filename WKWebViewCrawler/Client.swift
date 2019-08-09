@@ -1,5 +1,5 @@
 //
-//  Crawler.swift
+//  Client.swift
 //  WKWebViewCrawler
 //
 //  Created by Shunsuke Mori on 2019/08/09.

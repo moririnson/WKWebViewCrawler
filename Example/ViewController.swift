@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let url = URL(string: "https://qiita.com/")!
-        let request = URLRequest(url: url, method: .get, contentType: "*/*")
+        let request = URLRequest(url: url, method: .get, contentType: "text/html")
         client.request(request) { _ in
             self.client.filter(selector: ".tr-Item") { elements in
                 if let desc = elements?.description {
