@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "WKWebViewCrawler"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of WKWebViewCrawler."
+  spec.summary      = "WebView base iOS web crawler"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -64,7 +64,7 @@ WKWebViewCrawler is iOS web crawler. This is powered by WKWebView.
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios, "9.0"
+  spec.platform     = :ios, "9.0"
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -135,4 +135,5 @@ WKWebViewCrawler is iOS web crawler. This is powered by WKWebView.
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
+  spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 end
